@@ -1,0 +1,70 @@
+.mobile-keypad {
+  width: 100%;
+  background-color: #E4E7EB;
+  padding: 10px 8px 18px 8px;
+  border-top: 1px solid #D1D5DB;
+  margin-top: auto;
+}
+
+.keypad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.keypad-key {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.1s ease, transform 0.05s ease;
+  user-select: none;
+  padding: 2px 0;
+}
+
+.keypad-key:active {
+  background-color: #DDE2E8;
+  transform: scale(0.97);
+}
+
+.keypad-key.blank {
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.key-digit {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.key-letters {
+  font-size: 8.5px;
+  font-weight: 700;
+  color: #4B5563;
+  letter-spacing: 1.2px;
+  margin-top: 1px;
+}
+
+.backspace-key {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.backspace-key:active {
+  background-color: #DDE2E8;
+}
+
+.backspace-icon {
+  color: #1E293B;
+}

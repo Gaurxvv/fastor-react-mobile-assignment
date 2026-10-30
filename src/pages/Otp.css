@@ -1,0 +1,161 @@
+.otp-screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--color-card-bg);
+}
+
+@media (min-width: 600px) {
+  .otp-screen-wrapper {
+    min-height: 844px;
+    height: 880px;
+  }
+}
+
+.otp-top-nav {
+  padding: 8px 20px 10px 20px;
+}
+
+.otp-content {
+  padding: 10px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.otp-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.otp-subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.otp-phone-highlight {
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+.otp-error-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.otp-success-banner {
+  padding: 10px 14px;
+  background-color: #ECFDF5;
+  color: #059669;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* 6 Boxes Layout */
+.otp-boxes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.otp-box-group {
+  display: flex;
+  gap: 8px;
+}
+
+.otp-digit-box {
+  width: 44px;
+  height: 52px;
+  background-color: var(--color-card-bg);
+  border: 1.5px solid #E2E8F0;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  text-align: center;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.otp-digit-box:focus,
+.otp-digit-box.focused {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.otp-digit-box.filled {
+  border-color: #CBD5E1;
+  background-color: var(--color-input-bg);
+}
+
+.otp-dash {
+  font-size: 20px;
+  font-weight: 400;
+  color: #9CA3AF;
+  margin: 0 2px;
+}
+
+.otp-resend-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13.5px;
+  color: var(--color-text-muted);
+  margin-bottom: 14px;
+  gap: 4px;
+}
+
+.otp-timer-highlight {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.otp-resend-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.staging-otp-hint {
+  display: inline-flex;
+  align-self: center;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.staging-otp-hint:hover {
+  transform: scale(1.02);
+}
+
+.otp-cta {
+  margin-top: 4px;
+  gap: 8px;
+}
